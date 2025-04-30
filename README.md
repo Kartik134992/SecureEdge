@@ -15,15 +15,6 @@ Secure Logging: Ensures secure storage of transaction logs, with encryption or r
 
 Edge Computing: Runs efficiently on edge devices, ensuring low latency and fast decision-making.
 
-**⚙️ Installation & Setup**
-1. Clone the Repository
-First, clone the project repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/SecureEdge.git
-cd SecureEdge
 **2. Install Dependencies**
 Make sure you have Python 3.6+ installed. Then, use pip to install the required libraries:
 
@@ -31,7 +22,7 @@ bash
 Copy
 Edit
 pip install -r requirements.txt
-3. Dependencies
+**3. Dependencies**
 pandas: For data handling and manipulation.
 
 sklearn: For implementing the machine learning model.
