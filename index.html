@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureEdge | AI-Powered Market Intelligence</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cosmic Background -->
+    <div id="cosmic-background">
+        <canvas id="threejs-canvas"></canvas>
+        <div id="particles-js"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon"><i class="fas fa-shield-alt"></i></span>
+                <span>SecureEdge</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn-outline">Login</button>
+                <button class="btn-primary">Get Started</button>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-gradient">AI-Powered</span> Market Intelligence
+            </h1>
+            <p class="hero-subtitle">
+                Real-time predictions • Advanced analytics • Fraud protection
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary btn-large">
+                    Explore Features <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn-outline btn-large">
+                    Live Demo <i class="fas fa-play"></i>
+                </button>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Market Monitoring</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">99.9%</div>
+                    <div class="stat-label">Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value">50ms</div>
+                    <div class="stat-label">Update Speed</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="holographic-chart-container">
+                <svg id="holographic-chart" viewBox="0 0 1000 500"></svg>
+                <div class="holographic-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-header">
+            <h2 class="section-title">Cutting-Edge Financial Technology</h2>
+            <p class="section-subtitle">Powered by machine learning and real-time data processing</p>
+        </div>
+        <div class="features-grid">
+            <!-- Feature Card 1 -->
+            <div class="feature-card">
+                <div class="card-icon">
+                    <svg width="60" height="60" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" 
+                              fill="url(#glass-gradient)"></path>
+                    </svg>
+                </div>
+                <h3>Real-Time Analytics</h3>
+                <p>Live market data with millisecond precision and advanced visualization tools.</p>
+                <div class="card-radial-gradient"></div>
+                <div class="card-noise-overlay"></div>
+            </div>
+            
+            <!-- Feature Card 2 -->
+            <div class="feature-card">
+                <div class="card-icon">
+                    <svg width="60" height="60" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" 
+                              fill="url(#glass-gradient)"></path>
+                    </svg>
+                </div>
+                <h3>AI Predictions</h3>
+                <p>Machine learning models forecast market movements with 85%+ accuracy.</p>
+                <div class="card-radial-gradient"></div>
+                <div class="card-noise-overlay"></div>
+            </div>
+            
+            <!-- Feature Card 3 -->
+            <div class="feature-card">
+                <div class="card-icon">
+                    <svg width="60" height="60" viewBox="0 0 24 24">
+                        <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11V11.99z" 
+                              fill="url(#glass-gradient)"></path>
+                    </svg>
+                </div>
+                <h3>Fraud Detection</h3>
+                <p>Advanced anomaly detection identifies suspicious market activity in real-time.</p>
+                <div class="card-radial-gradient"></div>
+                <div class="card-noise-overlay"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section id="dashboard" class="dashboard">
+        <div class="section-header">
+            <h2 class="section-title">Interactive Market Dashboard</h2>
+            <p class="section-subtitle">Explore real-time data with our powerful visualization tools</p>
+        </div>
+        <div class="dashboard-container">
+            <div class="chart-controls">
+                <button class="time-btn active">1D</button>
+                <button class="time-btn">1W</button>
+                <button class="time-btn">1M</button>
+                <button class="time-btn">3M</button>
+                <button class="time-btn">1Y</button>
+                <button class="time-btn">ALL</button>
+            </div>
+            <div class="chart-container">
+                <svg id="stock-chart" viewBox="0 0 1000 600"></svg>
+                <div id="chart-tooltip" class="chart-tooltip"></div>
+            </div>
+            <div class="market-indicators">
+                <div class="indicator">
+                    <div class="indicator-value positive">+1.24%</div>
+                    <div class="indicator-label">S&P 500</div>
+                </div>
+                <div class="indicator">
+                    <div class="indicator-value negative">-0.56%</div>
+                    <div class="indicator-label">NASDAQ</div>
+                </div>
+                <div class="indicator">
+                    <div class="indicator-value positive">+0.89%</div>
+                    <div class="indicator-label">DOW</div>
+                </div>
+                <div class="indicator">
+                    <div class="indicator-value">$42,156</div>
+                    <div class="indicator-label">BTC/USD</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Trading Strategy?</h2>
+            <p>Join thousands of traders and institutions using SecureEdge for market intelligence</p>
+            <button class="btn-primary btn-large">
+                Start Free Trial <i class="fas fa-rocket"></i>
+            </button>
+        </div>
+        <div class="cta-particles" id="cta-particles"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon"><i class="fas fa-shield-alt"></i></span>
+                    <span>SecureEdge</span>
+                </div>
+                <p>AI-powered market intelligence platform for traders and institutions.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Product</h4>
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2023 SecureEdge Technologies. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- SVG Gradients (for IE support) -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <linearGradient id="glass-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#4a8fe7"></stop>
+                <stop offset="50%" stop-color="#3a86ff"></stop>
+                <stop offset="100%" stop-color="#5fb0ff"></stop>
+            </linearGradient>
+            <linearGradient id="holographic-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#00d2ff"></stop>
+                <stop offset="50%" stop-color="#3a7bd5"></stop>
+                <stop offset="100%" stop-color="#4a8fe7"></stop>
+            </linearGradient>
+        </defs>
+    </svg>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Draggable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.2/d3.min.js"></script>
+    
+    <!-- Main JavaScript -->
+    <script src="app.js"></script>
+</body>
+</html>

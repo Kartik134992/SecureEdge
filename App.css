@@ -1,0 +1,137 @@
+/* Cosmic Background */
+.cosmic-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Add your existing styles or those mentioned in the provided CSS code above */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0a192f;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+  }
+  
+.threejs-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+/* Holographic Chart */
+.holographic-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(ellipse at center, rgba(11, 25, 54, 0.8) 0%, #0a192f 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(58, 134, 255, 0.3);
+}
+
+.holographic-chart {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 10px rgba(74, 143, 231, 0.7));
+}
+
+.holographic-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    linear-gradient(135deg, rgba(74, 143, 231, 0.1) 0%, transparent 50%),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.03) 0px,
+      rgba(255, 255, 255, 0.03) 1px,
+      transparent 1px,
+      transparent 5px
+    );
+  pointer-events: none;
+}
+
+/* Morphing Glassmorphism Cards */
+.morphing-card {
+  position: relative;
+  padding: 2rem;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.morphing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px 0 rgba(58, 134, 255, 0.25);
+}
+
+.card-icon {
+  margin-bottom: 1.5rem;
+}
+
+.card-icon svg {
+  filter: drop-shadow(0 0 8px rgba(74, 143, 231, 0.6));
+}
+
+.card-radial-gradient {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(74, 143, 231, 0.1) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.card-noise-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.1"/></svg>');
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Glass gradient for SVGs */
+.glass-gradient {
+  stop-color: #4a8fe7;
+  stop-opacity: 1;
+}
+
+.glass-gradient stop:nth-child(2) {
+  stop-color: #3a86ff;
+}
+
+.glass-gradient stop:nth-child(3) {
+  stop-color: #5fb0ff;
+}
